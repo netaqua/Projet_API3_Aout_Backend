@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recherche</title>
+</head>
+<body>
+<table border="1">
+    <th>ID</th>
+    <th>Nom</th>
+    <th>Prenom</th>
+    <th>Mail</th>
+    <th>Matricule</th>
+    <th>Telephone</th>
+    <tr th:each="unemploye : ${monEmp}">
+        <td th:text="${unemploye.idemploye}"/>
+        <td th:text="${unemploye.nom}"/>
+        <td th:text ="${unemploye.prenom}"/>
+        <td th:text="${unemploye.mail}"/>
+        <td th:text="${unemploye.matricule}"/>
+        <td th:text="${unemploye.tel}"/>
+    </tr>
+</table>
+<a href ="/">retour</a>
+</body>
+</html>

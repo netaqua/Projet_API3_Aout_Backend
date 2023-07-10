@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ACCUEIL</title>
+</head>
+<body>
+<h1> bienvenue dans la gestion des employés(spring boot) </h1>
+<p><a href="employe/tous">voir tous les employes</a></p>
+<p><h3>Création d'un employé</h3>
+<form action = "employe/create" method="get">
+    matricule : <input type = "text" name="matricule"> <br>
+    nom : <input type = "text" name="nom"> <br>
+    prenom : <input type = "text" name="prenom"> <br>
+    tel : <input type = "text" name="tel"> <br>
+    mail : <input type = "text" name="mail"> <br>
+    <input type="submit" name="ok" value="ok">
+</form>
+</p>
+<p><h3>Modifier un employé</h3>
+<form action = "employe/update" method="get">
+    id employé : <input type = "text" name = "idEmploye"> <br>
+    mail : <input type = "text" name="mail"> <br>
+    matricule : <input type = "text" name="matricule"> <br>
+    tel : <input type = "text" name="tel"> <br>
+    <input type="submit" name="ok" value="ok">
+</form>
+</p>
+<p><h3>Recherche d'un employé</h3>
+<form action="employe/read" method="get">
+    id employé : <input type = "text" name = "idemploye"> <br>
+    <input type="submit" name="ok" value="ok">
+</form>
+</p>
+<p><h3>Supprimer un employé</h3>
+<form action="employe/delete" method="get">
+    id employé : <input type = "text" name = "idEmploye"> <br>
+    <input type="submit" name="ok" value="ok">
+</form>
+</p>
+</body>
+</html>
